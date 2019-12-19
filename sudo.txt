@@ -1,0 +1,18 @@
+require inquirer
+require fs
+
+ask for ID
+ask for email
+ask for role
+if manager office number
+if engineer github
+if intern school
+
+popluate HTML cards with user input (template literal)
+populate main HTML with HTML cards (template literal with variables used with fs.readfile)
+create employee class that has ID, email, role
+create manager object that inherits employee
+create engineer object that inherits employee
+create intern object that inherits employee
+
+after user input instanciate new object based on input
