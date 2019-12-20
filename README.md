@@ -1,3 +1,8 @@
+THis program ask the user questions about employees and creates HTML "cards" based on their response. Currently all the test pass, the prompts ask the user questions and create classes based on their response then fills in the template literals with the class information.
+
+The biggest issue I am having is taking that HTML and putting it into a master HTML file to be displayed. I will get TA assistance on Saturday.
+
+
 # Unit 10 OOP Homework: Template Engine - Employee Summary
 
 One of the most important aspects of programming is writing code that is readable, reliable, and maintainable. Oftentimes, *how* we design our code is just as important as the code itself. In this homework assignment, your challenge is to build a Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person. Since testing is a key piece in making code maintainable, you will also be ensuring that all unit tests pass.
