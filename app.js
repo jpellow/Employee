@@ -77,10 +77,34 @@ function addEmployee() {
                     },
                 ]))
             });
-            unique.then(function(data){
+            unique.then(function (data) {
                 var unique = data.unique
                 const manager = new Intern(name, id, email, unique)
                 console.log(manager);
+                var managerTemp = `
+                <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row bg-primary">
+                        <h3 class="card-title p-2 text-light">${name}</h3>
+                    </div>
+                    <div class="row bg-primary mb-4">
+                        <h3 class="card-title p-2 text-light">${title}</h3>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">ID: ${id}</p>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">Email: ${email}</p>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">School: ${unique}</p>
+                    </div>
+                </div>
+            </div>
+                `;
+                const element = document.getElementById("employees");
+                element.innerHTML = managerTemp;
+
 
             })
 
@@ -95,10 +119,34 @@ function addEmployee() {
                     },
                 ]))
             });
-            unique.then(function(data){
+            unique.then(function (data) {
                 var unique = data.unique
                 const engineer = new Intern(name, id, email, unique)
                 console.log(engineer);
+                var engineerTemp = `
+                <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row bg-primary">
+                        <h3 class="card-title p-2 text-light">${name}</h3>
+                    </div>
+                    <div class="row bg-primary mb-4">
+                        <h3 class="card-title p-2 text-light">${title}</h3>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">ID: ${id}</p>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">Email: ${email}</p>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">School: ${unique}</p>
+                    </div>
+                </div>
+            </div>
+                `;
+                const element = document.getElementById("employees");
+                element.innerHTML = engineerTemp;
+
             })
 
         }
@@ -112,12 +160,34 @@ function addEmployee() {
                     },
                 ]))
             });
-            unique.then(function(data){
+            unique.then(function (data) {
                 var unique = data.unique
                 const intern = new Intern(name, id, email, unique)
                 console.log(intern);
+                var internTemp = `
+                <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="row bg-primary">
+                        <h3 class="card-title p-2 text-light">${name}</h3>
+                    </div>
+                    <div class="row bg-primary mb-4">
+                        <h3 class="card-title p-2 text-light">${title}</h3>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">ID: ${id}</p>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">Email: ${email}</p>
+                    </div>
+                    <div class="row border m-1 p-3">
+                        <p class="card-text">School: ${unique}</p>
+                    </div>
+                </div>
+            </div>
+                `;
+                const element = document.getElementById("employees");
+                element.innerHTML = internTemp;
             })
-    
         }
     })
 }
